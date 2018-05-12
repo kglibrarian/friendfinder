@@ -36,16 +36,23 @@ module.exports = function(app){
             console.log("The new person and " + i + "are this difference:" + difference);
             if (difference < bestMatch) {
                 bestMatch = difference; 
-                compatiblePerson = friendData[i].name; 
+                compatiblePersonName = friendData[i].name; 
+                compatiblePersonPhoto = friendData[i].photo;
                 
             }
-            console.log("This is your most compatible match " + compatiblePerson);
+            // console.log("This is your most compatible match " + compatiblePerson);
         }
-       
+        // friendData.push(req.body);
+
+        // console.log("This is after push:" + friendData);
+
+
+
+        
 
         friendData.push(req.body);
         // console.log("This is after push:" + friendData);
-    
+        res.json({status: 'OK', compatiblePersonName: compatiblePersonName, compatiblePersonPhoto: compatiblePersonPhoto});
 	});
 }
 
