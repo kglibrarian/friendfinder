@@ -29,6 +29,9 @@ This app uses Express to handle routing and is deployed to Heroku.
   ## How to run this app
   There should be a version of this app hosted by Heroku 
 
+  https://dashboard.heroku.com/apps/secret-beyond-68240
+  
+
   If you aren't using the version of the app in Heroku, follow these instructions to run the app: 
   1. Download the files and open them in a text editor (such as Visual Studio)
   2. Right click on the server.js file and "Open in Command Prompt"
